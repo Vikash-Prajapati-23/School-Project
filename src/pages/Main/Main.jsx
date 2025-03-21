@@ -1,9 +1,11 @@
 import React from "react";
 import hero from "../../assets/hero.avif";
+import Navbar from "@/components/Navbar/Navbar";
 
 function Main() {
   return (
-    <div>
+    <header>
+      <Navbar />
       <div>
         <div className="relative h-[95vh] w-full">
           <img
@@ -95,7 +97,7 @@ function Main() {
           </p>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
