@@ -5,7 +5,7 @@ import Popular2 from "../../assets/PopularClasses2.avif";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 
-function PopularClases() {
+function PopularClasses() {
   return (
     <div>
       <div className="text-center p-7">
@@ -194,4 +194,4 @@ function PopularClases() {
   );
 }
 
-export default PopularClases;
+export default PopularClasses;

@@ -1,5 +1,5 @@
 import React from "react";
-import Footer_Bg from "../../assets/footer_bg.avif";
+import Footer_Bg from "../../assets/main_bg5.avif";
 
 function Footer() {
   console.log(Footer_Bg); // Ensure this logs the correct image path
@@ -9,7 +9,7 @@ function Footer() {
       className="bg-cover bg-fixed bg-no-repeat h-[450px] md:h-[330px] text-white p-5"
       style={{ backgroundImage: `url(${Footer_Bg})` }}
     >
-      <div className="md:mx-[30px] lg:mx-[5%] mx-[5%] ">
+      <div className="md:mx-[30px] lg:mx-[5%] mx-[5%]">
         <div className="flex flex-col md:flex-row my-3 justify-between lg:text-xl lg:justify-around items-center">
           <div className="">
             <div className="space-y-3 lg:text-2xl">
@@ -34,10 +34,12 @@ function Footer() {
             </div>
           </div>
 
-          <div className="flex space-x-7 sm:space-x-20 mxs-space-x-16 mxs:mt-3 lg:space-x-20 md:space-x-14">
-            <div>
-              <h3 className="text-xs md:text-lg font-bold">About Us</h3>
-              <ul>
+          <div className="flex space-x-12 text-xs md:text-base lg:text-xl pb-2 pt-5 md:pt-0 lg:pt-0 mxs-space-x-16 justify-center items-start lg:space-x-20 md:space-x-10">
+            <div className="space-y-2">
+              <h3 className="text-xs md:text-lg lg:text-2xl font-bold">
+                About
+              </h3>
+              <ul className="text-center text-xs md:text-base space-y-1">
                 <li>subhead1</li>
                 <li>subhead1</li>
                 <li>subhead1</li>
@@ -46,9 +48,11 @@ function Footer() {
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-xs md:text-lg font-bold">About Us</h3>
-              <ul>
+            <div className="space-y-2">
+              <h3 className="text-xs md:text-lg lg:text-2xl font-bold">
+                About
+              </h3>
+              <ul className="text-center text-xs md:text-base space-y-1">
                 <li>subhead1</li>
                 <li>subhead1</li>
                 <li>subhead1</li>
@@ -57,9 +61,11 @@ function Footer() {
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-xs md:text-lg font-bold">Contact Us</h3>
-              <ul>
+            <div className="space-y-2">
+              <h3 className="text-xs md:text-xl lg:text-2xl font-bold">
+                Contact
+              </h3>
+              <ul className="text-center text-xs md:text-base space-y-1">
                 <li>subhead1</li>
                 <li>subhead1</li>
                 <li>subhead1</li>

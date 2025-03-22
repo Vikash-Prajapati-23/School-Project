@@ -1,22 +1,33 @@
-import './App.css'
-import Footer from './components/Footer/Footer'
-import Navbar from './components/Navbar/Navbar'
-import BookASeat from './pages/BookASeat/BookASeat'
-import Main from './pages/Main/Main'
-import PopularClases from './pages/PopularClasses/PopularClasses'
-import Teachers from './pages/Teachers/Teachers'
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import Main from "./pages/Main/Main";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Login from "./components/LogIn/Login";
+import SignIn from "./components/SignIn/SignIn";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Navbar from "./components/Navbar/Navbar";
+import Addmission from "./components/Addmission/Addmission";
 
 function App() {
-
   return (
     <>
-      <Main />
-      <PopularClases />
-      <BookASeat />
-      <Teachers />
-      <Footer />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/addmission" element={<Addmission />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/sign" element={<SignIn />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

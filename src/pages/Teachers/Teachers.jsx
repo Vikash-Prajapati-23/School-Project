@@ -86,8 +86,7 @@ function Teachers() {
               )}
             </div>
             <p className="text-2xl font-semibold md:text-3xl">
-              {" "}
-              {teacher.name}{" "}
+              {teacher.name}
             </p>
             <p className="text-lg md:text-xl"> {teacher.role} </p>
           </div>
