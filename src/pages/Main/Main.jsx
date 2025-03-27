@@ -1,6 +1,8 @@
 import React from "react";
 import hero from "../../assets/hero.avif";
 import BookASeat from "../BookASeat/BookASeat";
+import Teachers from "../Teachers/Teachers";
+import PopularClasses from "../PopularClasses/PopularClasses";
 
 function Main() {
   return (
@@ -99,6 +101,8 @@ function Main() {
         </div>
       </header>
       <BookASeat />
+      <PopularClasses />
+      <Teachers />
     </>
   );
 }
