@@ -7,7 +7,7 @@ import { toast } from "sonner";
 function Addmission() {
   const [loading, setLoading] = useState(false);
 
-  const handleSave = (e) => {
+  const handleSave = (e) => {  // Backend pending...!
     e.preventDefault();
     setLoading(true);
     toast("Form Submitted.");

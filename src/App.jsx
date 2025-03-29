@@ -10,6 +10,7 @@ import SignIn from "./components/SignIn/SignIn";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Navbar from "./components/Navbar/Navbar";
 import Addmission from "./components/Addmission/Addmission";
+import StudentDashboard from "./pages/StudentDashBoard/StudentDashBoard";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/sign" element={<SignIn />} />
           <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/StudentDashBoard" element={<StudentDashboard/>} />
         </Routes>
         <Footer />
         <Toaster />
