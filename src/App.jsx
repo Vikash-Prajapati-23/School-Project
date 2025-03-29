@@ -1,4 +1,5 @@
 import "./App.css";
+import { Toaster } from "@/components/ui/sonner";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Main from "./pages/Main/Main";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Dashboard" element={<Dashboard />} />
         </Routes>
         <Footer />
+        <Toaster />
       </Router>
     </>
   );

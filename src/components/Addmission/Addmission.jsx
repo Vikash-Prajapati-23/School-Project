@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
+import { Loader2 } from "lucide-react";
+import { toast } from "sonner";
 
 function Addmission() {
-  const handleSave = () => {};
+  const [loading, setLoading] = useState(false);
+
+  const handleSave = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    toast("Form Submitted.");
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  };
 
   return (
     <form
@@ -12,25 +23,24 @@ function Addmission() {
     >
       <h1 className="text-center text-2xl font-bold">Addmission Form</h1>
       <div className="my-3 grid grid-cols-2 gap-5">
-        {" "}
-        {/* Define 2 columns */}
         <div className="col-span-1">
           <label>First Name</label>
-          <Input type="text" className=" w-full" />
+          <Input type="text" required="true" className=" w-full" />
         </div>
         <div className="col-span-1">
           <label>Last Name</label>
-          <Input type="text" className=" w-full" />
+          <Input type="text" required="true" className=" w-full" />
         </div>
         <div className="col-span-1">
           <label>Date of Birth</label>
-          <Input type="date" className=" w-full" />
+          <Input type="date" required="true" className=" w-full" />
         </div>
         <div className="col-span-1">
           <label htmlFor="gender">Gender</label>
           <select
             id="gender"
             name="gender"
+            required="true"
             className="border border-gray-300 rounded-md p-1 h-[35px] w-full"
           >
             <option value="" disabled>
@@ -43,21 +53,22 @@ function Addmission() {
         </div>
         <div className="col-span-1">
           <label>Father Name</label>
-          <Input type="text" className=" w-full" />
+          <Input type="text" required="true" className=" w-full" />
         </div>
         <div className="col-span-1">
           <label>Mother Name</label>
-          <Input type="text" className=" w-full" />
+          <Input type="text" required="true" className=" w-full" />
         </div>
         <div className="col-span-2">
           <label>Address</label>
-          <Input className=" w-full" />
+          <Input required="true" className=" w-full" />
         </div>
         <div className="col-span-1">
           <label htmlFor="select_class">Select Class</label>
           <select
             id="select_class"
             name="select_class"
+            required="true"
             className="border border-gray-300 rounded-md p-1 h-[35px] w-full"
           >
             <option value="" disabled>
@@ -76,6 +87,7 @@ function Addmission() {
           <select
             id="last_class"
             name="last_class"
+            required="true"
             className="border border-gray-300 rounded-md p-1 h-[35px] w-full"
           >
             <option value="" disabled>
@@ -92,23 +104,24 @@ function Addmission() {
         </div>
         <div className="col-span-2">
           <label>Last School Name</label>
-          <Input className=" w-full" />
+          <Input required="true" className=" w-full" />
         </div>
         <div className="col-span-1">
           <label>District Name</label>
-          <Input type="text" className=" w-full" />
+          <Input required="true" type="text" className=" w-full" />
         </div>
         <div className="col-span-1">
           <label>Pin Code</label>
-          <Input type="number" className=" w-full" />
+          <Input required="true" type="number" className=" w-full" />
         </div>
       </div>
       <Button
         variant="outline"
+        disabled={loading}
         className="bg-blue-400 font-semibold text-lg text-white rounded-3xl my-3"
         aria-label="Submit Form"
       >
-        Submit
+        {loading ? <Loader2 className="animate-spin" /> : "Submit"}
       </Button>
     </form>
   );
