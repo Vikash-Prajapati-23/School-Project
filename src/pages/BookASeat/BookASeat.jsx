@@ -61,32 +61,32 @@ function BookASeat() {
         <form onSubmit={handleSave} className="p-5 md:p-10 space-y-4">
           <Input
             type="text"
-            required="true"
+            required={true}
             className="py-5"
             placeholder="Student Name"
           />
           <Input
             type="text"
-            required="true"
+            required={true}
             className="py-5"
             placeholder="Gurdian's Name"
           />
           <Input
             type="text"
-            required="true"
+            required={true}
             className="py-5"
             placeholder="Address"
           />
           <Input
             type="number"
-            required="true"
+            required={true}
             className="py-5"
             placeholder="Contact"
           />
           <select
             id="select_class"
             name="select_class"
-            required="true"
+            required={true}
             className="border border-gray-300 rounded-md p-1 h-[35px] w-full"
           >
             <option value="" disabled>

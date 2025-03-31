@@ -4,6 +4,7 @@ import BookASeat from "../BookASeat/BookASeat";
 import Teachers from "../Teachers/Teachers";
 import PopularClasses from "../PopularClasses/PopularClasses";
 import Cards from "../Cards/Cards";
+import Carousel from "../Carousel/Carousel";
 
 function Main() {
   return (
@@ -34,6 +35,7 @@ function Main() {
       <BookASeat />
       <PopularClasses />
       <Teachers />
+      <Carousel/>
     </>
   );
 }
