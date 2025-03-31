@@ -39,7 +39,7 @@ function Teachers() {
   ];
 
   return (
-    <div className="p-7 md:p-24 lg:px-40 py-20">
+    <div className="p-7 md:p-24 lg:px-40">
       <div>
         <div className="flex justify-center mb-3 space-x-2">
           <Separator className="w-8 md:w-14 h-[1px] md:h-[2px] mt-[16px] bg-blue-500" />

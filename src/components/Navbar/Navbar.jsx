@@ -35,7 +35,17 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-slate-600 border-b-2 border-transparent hover:border-slate-600">
+              <a href="/Classes" className="hover:text-slate-600 border-b-2 border-transparent hover:border-slate-600">
+                Classes
+              </a>
+            </li>
+            <li>
+              <a href="/Teachers" className="hover:text-slate-600 border-b-2 border-transparent hover:border-slate-600">
+                Teachers
+              </a>
+            </li>
+            <li>
+              <a href="/Contact" className="hover:text-slate-600 border-b-2 border-transparent hover:border-slate-600">
                 Contact
               </a>
             </li>

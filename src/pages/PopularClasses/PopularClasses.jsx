@@ -16,7 +16,7 @@ function PopularClasses() {
         </div>
 
         <p className="text-4xl font-bold text-blue-500">
-          Classes for your kids
+        Classes for Your Kids
         </p>
       </div>
 
