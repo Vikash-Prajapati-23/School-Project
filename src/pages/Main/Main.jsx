@@ -5,6 +5,7 @@ import Teachers from "../Teachers/Teachers";
 import PopularClasses from "../PopularClasses/PopularClasses";
 import Cards from "../Cards/Cards";
 import Carousel from "../Carousel/Carousel";
+import { Separator } from "@radix-ui/react-separator";
 
 function Main() {
   return (
@@ -31,11 +32,25 @@ function Main() {
           </div>
         </div>
       </header>
-      <Cards/>
+      <Cards />
       <BookASeat />
       <PopularClasses />
-      <Teachers />
-      <Carousel/>
+      <section className="my-20">
+        <div>
+          <div className="flex justify-center mb-3 space-x-2">
+            <Separator className="w-8 md:w-14 h-[1px] md:h-[2px] mt-[16px] bg-blue-500" />
+            <p className="text-lg md:text-xl font-bold text-blue-500">
+              Our Teachers
+            </p>
+            <Separator className="w-8 md:w-14 h-[1px] md:h-[2px] mt-[16px] bg-blue-500" />
+          </div>
+          <p className="text-[30px] md:text-4xl font-semibold text-black text-center">
+            Meet Our Teachers
+          </p>
+        </div>
+        <Teachers />
+      </section>
+      <Carousel />
     </>
   );
 }

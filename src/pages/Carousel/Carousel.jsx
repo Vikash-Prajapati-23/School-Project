@@ -86,15 +86,15 @@ function Carousel() {
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div key={index} className="space-y-4">
-              <div className="p-4 bg-gray-200 w-72 mx-auto rounded-md">
+              <div className="p-4 bg-gray-200 w-72 rounded-md">
                 <p className="text-justify flex gap-3">
                   <strong className="text-6xl">❝</strong>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.sit, amet consectetur adipisicing elit
                   Temporibus illum tenetur adipisci.
                 </p>
               </div>
 
-              <div className="flex gap-4 justify-center items-center">
+              <div className="flex gap-4 items-center">
                 <img
                   src={slide.image}
                   className="h-20 w-20 rounded-full object-cover"
