@@ -51,14 +51,12 @@ export default {
           5: "hsl(var(--chart-5))",
         },
       },
-      // screens: {
-      //   xs: "375px", // Adding a custom `xs` breakpoint
-      // },
       screens: {
-        mxs: "430px", // Adding a custom `xs` breakpoint
+        mxs: "430px", // Custom `mxs` breakpoint
+        xs: "380px", // Custom `xs` breakpoint
       },
       backgroundImage: {
-        'footer-bg': "url('../../assets/footer_bg.avif')",
+        "footer-bg": "url('../../assets/footer_bg.avif')",
       },
     },
   },

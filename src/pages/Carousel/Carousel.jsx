@@ -42,7 +42,7 @@ function Carousel() {
     slidesToShow: 3,
     slidesToScroll: 1,
     cssEase: "ease-in-out",
-    pauseOnHover: false,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -51,6 +51,14 @@ function Carousel() {
           slidesToScroll: 3,
           infinite: true,
           dots: true,
+        },
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
         },
       },
       {
@@ -72,37 +80,37 @@ function Carousel() {
   };
 
   return (
-    <section className="px-40 mb-20">
+    <section className="px-7 md:px-24 lg:px-40 mb-20">
       <div className="text-center">
         <div className="flex justify-center mb-3 space-x-2">
-          <Separator className="w-14 h-[2px] mt-[16px] bg-blue-500" />
-          <p className="text-xl font-bold text-blue-500">Testimonial</p>
-          <Separator className="w-14 h-[2px] mt-[16px] bg-blue-500" />
+          <Separator className="w-10 md:w-14 h-[2px] mt-[16px] bg-blue-500" />
+          <p className="text-base md:text-xl font-bold text-blue-500">Testimonial</p>
+          <Separator className="w-10 md:w-14 h-[2px] mt-[16px] bg-blue-500" />
         </div>
-        <p className="text-4xl font-bold text-blue-500">What Parents Say</p>
+        <p className="text-2xl md:text-4xl font-bold text-blue-500">What Parents Say</p>
       </div>
 
       <div className="slider-container my-10">
         <Slider {...settings}>
           {slides.map((slide, index) => (
-            <div key={index} className="space-y-4">
-              <div className="p-4 bg-gray-200 w-[370px] rounded-md">
-                <p className="text-justify flex gap-3">
-                  <strong className="text-6xl">❝</strong>
+            <div key={index} className="space-y-4 mx-2">
+              <div className="p-4 bg-gray-200 w-[250px] md:w-[280px] lg:w-[360px] rounded-md">
+                <p className="text-justify mxs:text-sm flex gap-3">
+                  <strong className=" text-4xl md:text-6xl">❝</strong>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.sit, amet consectetur adipisicing elit
                   Temporibus illum tenetur adipisci.
                 </p>
               </div>
 
-              <div className="flex gap-4 items-center">
+              <div className="flex gap-3 md:gap-4 items-center">
                 <img
                   src={slide.image}
-                  className="h-20 w-20 rounded-full object-cover"
+                  className="h-16 md:h-20 w-16 md:w-20 rounded-full object-cover"
                   alt={slide.name}
                 />
-                <div className="mt-1">
-                  <h4 className="text-3xl font-semibold mb-2">{slide.name}</h4>
-                  <h4 className="text-xl font-semibold">{slide.profession}</h4>
+                <div className="md:mt-1">
+                  <h4 className="text-xl md:text-3xl font-semibold md:mb-2">{slide.name}</h4>
+                  <h4 className="text-base font-semibold">{slide.profession}</h4>
                 </div>
               </div>
             </div>

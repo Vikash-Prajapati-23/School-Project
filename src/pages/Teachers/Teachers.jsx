@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Separator } from "@/components/ui/separator";
 import Widow from "../../assets/Black_Widow.jpg";
 import Captain from "../../assets/Captain.jpg";
 import Dr_Strange from "../../assets/Dr_Strange.jpg";
@@ -42,7 +41,7 @@ function Teachers({ reverse }) {
 
   return (
     <>
-      <div className="md:px-24 lg:px-40">
+      <div className="px-7 md:px-24 lg:px-40">
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-18 py-14">
           {displayedTeachers.map((teacher, index) => (
             <div key={index} className="relative text-center">
