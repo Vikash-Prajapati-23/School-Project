@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Addmission from "./components/Addmission/Addmission";
 import StudentDashboard from "./pages/StudentDashBoard/StudentDashBoard";
 import TeachersNav from "./components/TeachersNav/TeachersNav";
-import { Contact } from "lucide-react";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path="/classes" element={<Classes />} />
           <Route path="/addmission" element={<Addmission />} />
           <Route path="/teachers" element={<TeachersNav />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/sign" element={<SignIn />} />
           <Route path="/Dashboard" element={<Dashboard />} />

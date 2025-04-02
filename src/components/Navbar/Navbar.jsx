@@ -46,7 +46,7 @@ function Navbar() {
             </li>
             <li>
               <a href="/Contact" className="hover:text-slate-600 border-b-2 border-transparent hover:border-slate-600">
-                Contact
+                Contact Us
               </a>
             </li>
             <li>

@@ -25,22 +25,22 @@ function Addmission() {
       <div className="my-3 grid grid-cols-2 gap-5">
         <div className="col-span-1">
           <label>First Name</label>
-          <Input type="text" required="true" className=" w-full" />
+          <Input type="text" required={true} className=" w-full" />
         </div>
         <div className="col-span-1">
           <label>Last Name</label>
-          <Input type="text" required="true" className=" w-full" />
+          <Input type="text" required={true} className=" w-full" />
         </div>
         <div className="col-span-1">
           <label>Date of Birth</label>
-          <Input type="date" required="true" className=" w-full" />
+          <Input type="date" required={true} className=" w-full" />
         </div>
         <div className="col-span-1">
           <label htmlFor="gender">Gender</label>
           <select
             id="gender"
             name="gender"
-            required="true"
+            required={true}
             className="border border-gray-300 rounded-md p-1 h-[35px] w-full"
           >
             <option value="" disabled>
@@ -53,22 +53,22 @@ function Addmission() {
         </div>
         <div className="col-span-1">
           <label>Father Name</label>
-          <Input type="text" required="true" className=" w-full" />
+          <Input type="text" required={true} className="w-full" />
         </div>
         <div className="col-span-1">
           <label>Mother Name</label>
-          <Input type="text" required="true" className=" w-full" />
+          <Input type="text" required={true} className="w-full" />
         </div>
         <div className="col-span-2">
           <label>Address</label>
-          <Input required="true" className=" w-full" />
+          <Input required={true} className="w-full" />
         </div>
         <div className="col-span-1">
           <label htmlFor="select_class">Select Class</label>
           <select
             id="select_class"
             name="select_class"
-            required="true"
+            required={true}
             className="border border-gray-300 rounded-md p-1 h-[35px] w-full"
           >
             <option value="" disabled>
@@ -87,7 +87,7 @@ function Addmission() {
           <select
             id="last_class"
             name="last_class"
-            required="true"
+            required={true}
             className="border border-gray-300 rounded-md p-1 h-[35px] w-full"
           >
             <option value="" disabled>
@@ -104,15 +104,15 @@ function Addmission() {
         </div>
         <div className="col-span-2">
           <label>Last School Name</label>
-          <Input required="true" className=" w-full" />
+          <Input required={true} className=" w-full" />
         </div>
         <div className="col-span-1">
           <label>District Name</label>
-          <Input required="true" type="text" className=" w-full" />
+          <Input required={true} type="text" className=" w-full" />
         </div>
         <div className="col-span-1">
           <label>Pin Code</label>
-          <Input required="true" type="number" className=" w-full" />
+          <Input required={true} type="number" className=" w-full" />
         </div>
       </div>
       <Button
