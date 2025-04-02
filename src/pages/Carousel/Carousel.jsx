@@ -42,7 +42,7 @@ function Carousel() {
     slidesToShow: 3,
     slidesToScroll: 1,
     cssEase: "ease-in-out",
-    pauseOnHover: true,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -86,7 +86,7 @@ function Carousel() {
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div key={index} className="space-y-4">
-              <div className="p-4 bg-gray-200 w-72 rounded-md">
+              <div className="p-4 bg-gray-200 w-[370px] rounded-md">
                 <p className="text-justify flex gap-3">
                   <strong className="text-6xl">❝</strong>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.sit, amet consectetur adipisicing elit

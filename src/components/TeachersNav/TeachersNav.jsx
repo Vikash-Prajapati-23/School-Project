@@ -15,7 +15,7 @@ function TeachersNav() {
         <h2 className="text-5xl text-white font-bold">Our Teachers</h2>
       </header>
 
-      <div>
+      <div className="mt-24">
         <div className="flex justify-center mb-3 space-x-2">
           <Separator className="w-8 md:w-14 h-[1px] md:h-[2px] mt-[16px] bg-blue-500" />
           <p className="text-lg md:text-xl font-bold text-blue-500">
@@ -29,8 +29,8 @@ function TeachersNav() {
       </div>
 
       <section className="space-y-14 ">
-        <div>
-          <Teachers />
+        <div className="space-y-[-50px] ">
+          <Teachers/>
           <Teachers reverse />
         </div>
 
